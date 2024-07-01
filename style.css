@@ -1,0 +1,500 @@
+body {
+    background-color: #fffbfb !important;
+}
+
+/* Header */
+header {
+    background: url(header.png);
+    height: 200px;
+    width: 100%;
+}
+
+header h1 {
+    color: #fffbfb;
+}
+
+/* Menu dentro de header */
+nav .nav-link {
+    color: #fffbfb;
+}
+
+nav .nav-link:hover {
+    color: #aa0000;
+}
+
+
+/* Carousel de Imagens */
+.carousel img {
+    width: 100%;
+}
+
+#carou {
+    margin-top: 100px;
+}
+
+.carousel {
+    border: #aa0000 solid 6px;
+    border-radius: 10px;
+}
+
+div.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+.carousel-indicators .active {
+    background-color: #fffbfb !important;
+}
+
+.carousel-caption {
+    right: 50% !important;
+    top: 43%;
+}
+
+.carousel-caption h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Aba Quem Somos */
+
+.quemsomos-text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #0a0a0a;
+    text-align: start;
+}
+
+
+#foto-yaki img {
+    height: 400px;
+    ;
+}
+
+#quemsomos h2 {
+    font-size: 40px;
+    color: #0a0a0a;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fffbfb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.borda-preta {
+    display: block;
+    background-color: #0a0a0a;
+    height: 4px;
+    width: 10%;
+    margin: 0 auto;
+}
+
+#sobre-juntando {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#quemsomos {
+    margin: 100px 0 !important;
+}
+
+
+/* Section Cardapio */
+#cardapio {
+    background-color: #0a0a0a;
+    color: #fffbfb;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+.zoom {
+    overflow: hidden;
+    width: 232px;
+    height: 232px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tab-pane img {
+    height: 232px;
+    width: 232px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.tab-pane img:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+#cardapio .active {
+    background-color: #ffffff00;
+    color: #aa0000;
+}
+
+.tab-pane {
+    color: #fffbfb !important;
+}
+
+#card button {
+    border-right: solid #fffbfb34 1px;
+    border-radius: 0;
+}
+
+#barra {
+    display: block;
+    min-height: 2px;
+    background-color: #aa0000;
+    width: 50%;
+    margin: 10px auto;
+}
+
+#cardapio h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#branca {
+    background-color: #fffbfb;
+    display: block;
+    min-height: 2px;
+    width: 5%;
+    margin: 20px auto;
+}
+
+/* Section Galeria */
+
+.espaco {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+#galeria img {
+    width: 20%;
+    height: 200px;
+
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Secao do Footer */
+footer {
+    background: url(footer.png);
+    min-height: 200px;
+    color: #fffbfb;
+}
+
+.endereco {
+    width: 70%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.redes i:hover {
+    color: #aa0000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.barra-footer {
+    min-height: 1px;
+    width: 30%;
+    margin: 12px auto;
+    background-color: #fffbfb;
+    display: block;
+}
+
+#delivery {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    #ver {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #galeria img {
+        width: 20%;
+        height: 100px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* FOOTER */
+    .redes i {
+        display: block;
+    }
+
+    footer {
+        background: url(footer-cell.png);
+        color: #fffbfb;
+        font-size: 13px;
+    }
+
+    /* Header */
+    header ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        background: url(header-cell.png);
+        height: 200px;
+        width: 100%;
+    }
+
+    /* Quem somos */
+
+    .quemsomos-text {
+        width: 99%;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #0a0a0a;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+
+    #foto-yaki img {
+        height: 300px;
+
+    }
+
+    #quemsomos h2 {
+        font-size: 30px;
+        color: #0a0a0a;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fffbfb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .borda-preta {
+        display: block;
+        background-color: #0a0a0a;
+        height: 4px;
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    #sobre-juntando {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #quemsomos {
+        margin: 100px 0 !important;
+    }
+
+    #card {
+        display: none;
+    }
+
+    #card button {
+        margin: 0 auto;
+        border-right: none;
+        border-bottom: solid #fffbfb34 1px;
+    }
+
+    #ver {
+        background-color: #aa0000;
+        color: #fffbfb;
+        border: solid 2px #aa0000;
+        font-weight: 500;
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+        transition: 0.3s;
+
+    }
+
+    #ver:hover {
+        background-color: #0a0a0a;
+        color: #aa0000;
+        border: solid 2px #aa0000;
+        transition: 0.3s;
+    }
+
+    /*carrousel */
+    .carousel {
+        border: none;
+        border-radius: 10px;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    #carou {
+        margin: 0;
+        padding: 0;
+        max-width: 768px;
+    }
+
+    .carousel img {
+        max-width: 768px;
+    }
+
+    .carousel-caption {
+        right: 10% !important;
+        top: 35%;
+        left: 10%;
+        bottom: 0%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+    #galeria img {
+        width: 20%;
+        height: 100px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* FOOTER */
+    .redes i {
+        display: block;
+    }
+
+    footer {
+        background: url(footer-tablet.png);
+        max-height: 200px;
+        color: #fffbfb;
+        font-size: 13px;
+    }
+
+    /* Header */
+    header ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        background: url(header-tablet.png);
+        height: 200px;
+        width: 100%;
+    }
+
+    /* Quem somos */
+
+    .quemsomos-text {
+        width: 99%;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #0a0a0a;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+
+    #foto-yaki img {
+        height: 300px;
+
+    }
+
+    #quemsomos h2 {
+        font-size: 30px;
+        color: #0a0a0a;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fffbfb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .borda-preta {
+        display: block;
+        background-color: #0a0a0a;
+        height: 4px;
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    #sobre-juntando {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #quemsomos {
+        margin: 100px 0 !important;
+    }
+
+    #card {
+        display: none;
+    }
+
+    #card button {
+        margin: 0 auto;
+        border-right: none;
+        border-bottom: solid #fffbfb34 1px;
+    }
+
+    #ver {
+        background-color: #aa0000;
+        color: #fffbfb;
+        border: solid 2px #aa0000;
+        font-weight: 500;
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+        transition: 0.3s;
+
+    }
+
+    #ver:hover {
+        background-color: #0a0a0a;
+        color: #aa0000;
+        border: solid 2px #aa0000;
+        transition: 0.3s;
+    }
+
+    .carousel {
+        border: #aa0000 solid 3px;
+        border-radius: 10px;
+    }
+
+    .carousel-caption {
+        right: 10% !important;
+        top: 35%;
+        left: 10%;
+        bottom: 0%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+}

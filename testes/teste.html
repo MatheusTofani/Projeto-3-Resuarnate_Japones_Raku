@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raku</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="teste.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header" class="navbar navbar-expand-lg sticky-top">
+        <div class="container ">
+            <div class="navbar-brand" id="">
+                <h1>Raku</h1>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu" class="navbar-collapse collapse justify-content-end" >
+                <ul  class="nav nav-pills d-block d-md-flex  ">
+                    <li class="nav-item "> <a href="#" class="nav-link">ITEM 1</a></li>
+                    <li class="nav-item"> <a href="#cardapio" class="nav-link">ITEM 2</a></li>
+                    <li class="nav-item"> <a href="" class="nav-link">ITEM 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <div id="carou" class="container">
+
+        <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="slider"></div>
+                    
+                    <img src="slide1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3> Venha comer o melhor Sushi de BH!</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="slider"></div>
+                    
+                    <img src="slide2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Preços imperdiveis</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="slider"></div>
+                    
+                    <img src="slide3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3> Rodizio de sexta a domingo!</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- SPY -->
+    <div class="spy" data-bs-spy="scroll" data-bs-target="header">
+
+        <!--CARDAPIO -->
+        <section id="cardapio">
+            <div class="container">
+                <h2 class="section-title text-center mt-5 mb-4"> Cardapio </h2>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav id="card" class="nav nav-pills d-flex justify-content-center fw-bold ">
+                            <button data-bs-toggle="tab" data-bs-target="#pratos-quentes" type="button"
+                                class="nav-link active">Entradas Quentes</button>
+                            <button data-bs-toggle="tab" data-bs-target="#pratos-frios" type="button"
+                                class="nav-link">Entradas
+                                Frias</button>
+                            <button data-bs-toggle="tab" data-bs-target="#sashimis" type="button"
+                                class="nav-link">Sashimis</button>
+                            <button data-bs-toggle="tab" data-bs-target="#sushijhou" type="button"
+                                class="nav-link">Sushi
+                                Jhou</button>
+                            <button data-bs-toggle="tab" data-bs-target="#hotroll" type="button" class="nav-link">Hot
+                                Roll</button>
+                            <button data-bs-toggle="tab" data-bs-target="#temaki" type="button"
+                                class="nav-link">Temakis</button>
+                            <button data-bs-toggle="tab" data-bs-target="#yakissoba" type="button"
+                                class="nav-link">Yakissoba</button>
+                            <button data-bs-toggle="tab" data-bs-target="#bebida-n-a" type="button"
+                                class="nav-link">Bebidas Não
+                                Alcoólicas</button>
+                            <button data-bs-toggle="tab" data-bs-target="#drink" type="button"
+                                class="nav-link">Drinks</button>
+                            <button id="bn" data-bs-toggle="tab" data-bs-target="#bebida-a" type="button"
+                                class="nav-link">Cervejas</button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="tab-content ">
+
+                    <div class="tab-pane text-center active my-5 " id="pratos-quentes">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_381eeac44ec248f4b181e46b2c2a6ccd~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Shimeji</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Cogumelos pequenos comestíveis preparados com manteiga.</i>
+                                <p class="mt-3 h5">R$ 89,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_49134d22dabb44ce820de9f9ef59013f~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Shimeji com Lula</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Cogumelos comestíveis com Lula cortada em fatias.</i>
+                                <p class="mt-3 h5">R$ 99,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_c18a6d934dae4dd2b576a615b82c4ba6~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Harumaki de Legumes</h4>
+                                <span id="barra"></span>
+                                <i id="desc">O Harumaki é um enrolado frito, de massa muito crocante e com recheios
+                                    variados. 8 Unidades. 8 unidades</i>
+                                <p class="mt-3 h5">R$ 59,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_391a56a5a2144769a67e97d751a9aa1b~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Missoshiru</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Sopa a base de pasta de soja com queijo tofú e cebolinha.</i>
+                                <p class="mt-3 h5">R$ 29,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_038dece34a9746718c7037ba0d349c86~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Gohan</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Arroz branco japonês.</i>
+                                <p class="mt-3 h5">R$ 22,90</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center my-5" id="pratos-frios">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_f3afdb451ee647359aa3a4fa6a1dee47~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Carpaccio Salmão Maçaricado</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Lâminas de salmão levemente maçaricadas. 16 Lâminas.</i>
+                                <p class="mt-3 h5">R$ 84,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_f4e06670374d4fc0b4f7edae1571590d~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Carpaccio Atum</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Lâminas de atum mergulhadas ao molho ponzú com gergelim moído e cebolinha16
+                                    Unidades. 16 lâminas.</i>
+                                <p class="mt-3 h5">R$ 89,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_a5aed50f72884074a5db461ebe85777e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Carpaccio Peixe prego Maçaricado</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Lâminas de peixe prego maçaricadas com teriyaki, gergelim e molho especial
+                                    a base de alho. 16 Lâminas.</i>
+                                <p class="mt-3 h5">R$ 74,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_1c2aa523ff0244958917e2a8e09f0bf7~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Ceviche Peixe branco</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Peixe branco marinado no limão com cebolinha e cebola roxa.</i>
+                                <p class="mt-3 h5">R$ 79,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_e4a315570e5b4a249d2ca316c1095bdb~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Ceviche de salmão</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Salmão marinado no limão com cebolinha e cebola roxa.</i>
+                                <p class="mt-3 h5">R$ 89,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_ae1d38232c6e4087870c07ad1a19a4d2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Canapé Salmão</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Salmão batido com cream cheese, cebolinha, gergelim, molho teriyaki e massa
+                                    de harumaki. 16 unidades.</i>
+                                <p class="mt-3 h5">R$ 59,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_0dc4b5ef8f1f48ee879d32d4e42d9294~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sunomono Kani</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Salada de pepino com cenoura, kani e gergelim.</i>
+                                <p class="mt-3 h5">R$ 39,90</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center  my-5" id="sashimis">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_4fc2b702a92a41d49a6d411aaca1dc68~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sashimi de peixe branco</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Fatias de peixe branco cru. 10 fatias</i>
+                                <p class="mt-3 h5">R$ 89,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_ae92a0ecc9c34b788317fd06d8c46369~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sashimi de Salmão</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Fatias de salmão cru. 10 fatias</i>
+                                <p class="mt-3 h5">R$ 99,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_faff0f997a554ab29a730fde7325f5c4~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sashimi de Atum</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Fatias de atum cru. 10 fatias</i>
+                                <p class="mt-3 h5">R$ 109,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_3f28f3f9d5dc4e6f824414cc0639aab3~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sashimis polvo</h4>
+                                <span id="barra"></span>
+                                <i id="desc">16 fatias</i>
+                                <p class="mt-3 h5">R$ 129,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center  my-5" id="sushijhou">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_cbcbddedb4994bed89d0d09af301ad74~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Jhou Salmão cream cheese e cebolinha</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Enrolado salmão com recheio na parte superior de creamcheese e cebolinha. 8
+                                    unidades</i>
+                                <p class="mt-3 h5">R$ 59,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_08abc63069fb4fdd94714ac96915c1cf~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Jhou Salmão cream cheese e couve</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Enrolado salmão com recheio na parte superior de creamcheese e couve. 8
+                                    unidades</i>
+                                <p class="mt-3 h5">R$ 79,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_22fb9a6e62ed45e9a29ac782c52a9dd8~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Jhou Salmão cream cheese e doritos</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Enrolado salmão com recheio na parte superior de creamcheese e doritos. 8
+                                    unidades</i>
+                                <p class="mt-3 h5">R$ 59,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_94040af52ac6494596cadada80454701~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Jhou Atum maçaricado e pimenta tabasco</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Enrolado Atum maçaricado com recheio na parte superior de pimenta tabasco.
+                                    8 unidades</i>
+                                <p class="mt-3 h5">R$ 69,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_c6789e533f984519a172abe3bbe49baa~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Jhou Ebiten Teriyaki Picante</h4>
+                                <span id="barra"></span>
+                                <i id="desc">8 unidades</i>
+                                <p class="mt-3 h5">R$ 79,90</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane text-center  my-5" id="hotroll">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_c5e98e70306a471e9bf8ea98af32f627~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Hot Roll Salmão creamcheese cebolinha</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Hossomaki empanado frito com recheio salmão e coberto com creamcheese e
+                                    cebolinha.</i>
+                                <p class="mt-3 h5">R$ 45,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_f3f441c5046e42eda48566d0a55ba5a2~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Hot Roll Salmão creamcheese e alho poró frito</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Hossomaki empanado frito com recheio de salmão coberto com creamcheese e
+                                    alho poró.</i>
+                                <p class="mt-3 h5">R$ 45,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_cdfde4027d8b417a83b92bc868a244ad~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Hot Roll Salmão Ebi</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Hossomaki empanado frito com recheio salmão com camarão.</i>
+                                <p class="mt-3 h5">R$ 56,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_6eb63757b1274e7bb42ca4883eac73bb~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Hot Doritos</h4>
+                                <span id="barra"></span>
+                                <p class="mt-3 h5">R$ 45,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center  my-5" id="temaki">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_3db48264db9146ad91bbf64212742478~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Salmão</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Arroz, salmão, creamcheese e cebolinha)</i>
+                                <p class="mt-3 h5">R$ 36,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_f329c3583c62449a872f87475134430f~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Atum</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Arroz, atum, creamcheese e cebolinha)</i>
+                                <p class="mt-3 h5">R$ 43,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_454da45b7605476fb9d213130573f0e1~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Skin</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Arroz, skin, creamcheese e cebolinha)</i>
+                                <p class="mt-3 h5">R$ 34,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_e5bcd142c43c431780f0c55ab48a2718~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Salmão com doritos</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Arroz, salmão, doritos, creamcheese e cebolinha)</i>
+                                <p class="mt-3 h5">R$ 38,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_c536c641cfec4c5d897f2bf275b2c53e~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Salmão Nashy</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Arroz, salmão, tomate seco, rúcula, cream cheese, cebolinha)</i>
+                                <p class="mt-3 h5">R$ 38,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_066561bd1e8b428db1fb9b8cfd67bb59~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Temaki Hot</h4>
+                                <span id="barra"></span>
+                                <i id="desc">(Empanado, arroz, salmão grelhado, creamcheese, teriyaki e cebolinha)</i>
+                                <p class="mt-3 h5">R$ 42,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center my-5" id="yakissoba">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_0ddebab4f56e42da8aeb07a401b65792~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Yakissoba Vegetariano</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Macarrão, shimeji e legumes</i>
+                                <p class="mt-3 h5">R$ 59,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_e06bc9b3ed0c4d188a2d6716684c68df~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Yakissoba Camarão</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Macarrão, camarão e legumes</i>
+                                <p class="mt-3 h5">R$ 89,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_61d3f1e33d844ebb87a3ca75ff2b7ae3~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Yakissoba Frutos do Mar</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Macarrão, frutos do mar e legumes.</i>
+                                <p class="mt-3 h5">R$ 99,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center my-5" id="bebida-n-a">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://a-static.mlcdn.com.br/450x450/2-aguas-mineral-sem-gas-300ml-crystal/tapiocadouradadobaixinho/79d2582ec44711ed8f484201ac18502f/54af7bc666f23f13e4820db3b08f1882.jpeg"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Água</h4>
+                                <span id="barra"></span>
+                                <i id="desc">300 ml</i>
+                                <p class="mt-3 h5">R$ 7,40</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://www.samsclub.com.br/blog/wp-content/uploads/2024/01/Vidro-do-suco-de-laranja-colocado-num-copo-sobre-madeira.jpg"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sucos Naturais</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Sabores: Laranja, Maracujá, Morango, Melancia, Abacaxi, Abacaxi com
+                                    Hortelã, Kiwi e Uva.</i>
+                                <p class="mt-3 h5">R$ 10,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_61d3f1e33d844ebb87a3ca75ff2b7ae3~mv2.jpeg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Coca Cola</h4>
+                                <span id="barra"></span>
+                                <i id="desc">350 ml</i>
+                                <p class="mt-3 h5">R$ 8,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://res.cloudinary.com/vuca-solution/image/upload/w_744,h_559,c_fill,q_auto,f_auto/v1696017611/storage.vucasolution.com.br/terraceburger/arqs/produtos/gki2yx6kgd8ddjvm3lnn.jpg"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Guaraná</h4>
+                                <span id="barra"></span>
+                                <i id="desc">350 ml</i>
+                                <p class="mt-3 h5">R$ 8,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center my-5" id="drink">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_1ae6d26a9e8a408baaf32f7e67090689~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Caipiroska</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Sabores: frutas vermelhas, morango, kiwi, abacaxi, limão siciliano,
+                                    melancia, maracujá, uva e frutas amarelas.</i>
+                                <p class="mt-3 h5">R$ 29,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_d95a636cd7be4527aecd5382ee6f3d97~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Mojito</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Hortelã, limão, rum e água com gás</i>
+                                <p class="mt-3 h5">R$ 28,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://static.wixstatic.com/media/abcaec_dfcc2eb405394c39b991e39e12299056~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Sex on the beach</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Suco de laranja, vodka, licor fino de pêssego, groselha e gelo.</i>
+                                <p class="mt-3 h5">R$ 29,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane text-center my-5" id="bebida-a">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://acdn.mitiendanube.com/stores/938/249/products/00-11-03c5254ece804a59ec16775959356005-1024-1024.png"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Heineken</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Long Neck.</i>
+                                <p class="mt-3 h5">R$ 13,90</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqkiWZ3BB2-EB2NWhFsFUh9O8GIPoL1cw05g&s"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Stella Artois</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Long Neck.</i>
+                                <p class="mt-3 h5">R$ 12,90</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="zoom">
+                                <img src="https://fischerbebidas.com.br/wp-content/uploads/2023/07/budweiser.webp"
+                                    alt="">
+                                    </div>
+                                <h4 class="my-3">Budweiser</h4>
+                                <span id="barra"></span>
+                                <i id="desc">Long Neck.</i>
+                                <p class="mt-3 h5">R$ 12,90</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
