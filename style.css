@@ -240,7 +240,7 @@ footer .container {
 @media screen and (max-width: 768px) {
     #galeria img {
         width: 20%;
-        height: 80px;
+        height: 90px;
     }
 
     body {
@@ -358,11 +358,12 @@ footer .container {
 
     .carousel img {
         max-width: 768px;
+        height: 250px;
     }
 
     .carousel-caption {
         right: 10% !important;
-        top: 30%;
+        top: 37%;
         left: 10%;
         bottom: 0%;
     }
