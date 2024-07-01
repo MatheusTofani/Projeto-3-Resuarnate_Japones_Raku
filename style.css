@@ -240,7 +240,7 @@ footer .container {
 @media screen and (max-width: 768px) {
     #galeria img {
         width: 20%;
-        height: 90px;
+        height: 80px;
     }
 
     body {
