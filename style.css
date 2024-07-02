@@ -269,7 +269,7 @@ footer .container {
 
     header {
         background: url(header-cell.png);
-        height: 200px;
+        height: 250px;
         width: 100%;
     }
 
@@ -407,11 +407,12 @@ footer .container {
     header ul {
         margin: 0 auto;
         text-align: center;
+        font-size: 20px;
     }
 
     header {
         background: url(header-tablet.png);
-        height: 200px;
+        height: 300px;
         width: 100%;
     }
 
