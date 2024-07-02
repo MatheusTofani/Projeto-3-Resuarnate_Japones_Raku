@@ -13,6 +13,9 @@ header h1 {
     color: #fffbfb;
 }
 
+#logo img {
+    height: 150px;
+}
 /* Menu dentro de header */
 nav .nav-link {
     color: #fffbfb;
@@ -270,6 +273,9 @@ footer .container {
         width: 100%;
     }
 
+    #logo img {
+        height: 100px;
+    }
     /* Quem somos */
 
     .quemsomos-text {
